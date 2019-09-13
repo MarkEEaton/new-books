@@ -3,6 +3,7 @@
 - This script was developed to solve a specific problem faced by our librarians: how to turn a spreadsheet of new books into an HTML document quickly and easily.
 - Because our acquisitions librarian needed to be do this regularly, coding the HTML by hand was not a viable option.
 - So the script we wrote automatically produces an HTML output from a CSV file. This HTML is suitable for cutting and pasting into a LibGuide.
+- A lot of the code is devoted to specifically handling the peculiarities of data from ProQuest's Oasis. If you're using another data source, your mileage may vary.
 
 ## To use the script
 
