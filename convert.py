@@ -41,13 +41,16 @@ def make_tuples(input_data):
                 + line[4]
                 + "&tab=default_tab&search_scope=everything&vid=kb&lang=en_US&offset=0"
             )
-        else:
+            bib_info4 = '<li><a href="' + url + '">Search the catalog</a></li>'
+        elif line[2]:
             url = (
                 "http://onesearch.cuny.edu/primo-explore/search?query=any,contains,"
                 + line[2]
                 + "&tab=default_tab&search_scope=everything&vid=kb&lang=en_US&offset=0"
             )
-        bib_info4 = '<li><a href="' + url + '">Search the catalog</a></li>'
+            bib_info4 = '<li><a href="' + url + '">Search the catalog</a></li>'
+        else:
+            bib_info4 = ""
 
         # assemble all the HTML for the item
         bib_info = (
