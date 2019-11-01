@@ -17,14 +17,14 @@ To set up the converter at the command line (you only need to do this part once)
 
 Then you should have your input spreadsheet organized as follows:
 
-|    A     |    B   |    C  |    D        |
-|:--------:|:------:|:-----:|:-----------:|
-| LC Class | Author | Title | Call Number |
-|   ...    |   ...  |  ...  |     ...     |
+|    A     |    B   |    C  |    D        |    E  |
+|:--------:|:------:|:-----:|:-----------:|:-----:|
+| LC Class | Author | Title | Call Number | ISBN  |
+|   ...    |   ...  |  ...  |     ...     |  ...  |
 
 - Be sure to include a row with column headers!
 - The data goes below. 
-- Save it as a CSV file. Place it in the `new-books/data/` directory.
+- Save it as a CSV file. Make sure the ISBN is not in scientific notation. Place it in the `new-books/data/` directory.
 
 Once that's set up, you can use the convert script by replacing `input.csv` and `output.html` in this command with your own filenames:
 
