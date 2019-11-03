@@ -34,7 +34,7 @@ The output file will be in the `data/` directory.
 
 ## Want to run a desktop version?
 
-Use the `gooey` branch of this repository. Then follow the packaging instructions at the Gooey [page](https://github.com/chriskiehl/Gooey#packaging).
+See the repository for the [desktop version](https://github.com/markeeaton/new-books-desktop).
 
 ## Want to see more?
 
