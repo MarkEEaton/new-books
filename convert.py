@@ -37,16 +37,16 @@ def make_tuples(input_data):
         # make the url for the catalog link. Use ISBN if available, or else use the title. Then make HTML for the url.
         if line[4]:
             url = (
-                "http://onesearch.cuny.edu/primo-explore/search?query=isbn,exact,"
+                "https://cuny-kb.primo.exlibrisgroup.com/discovery/search?query=isbn,exact,"
                 + line[4]
-                + "&tab=default_tab&search_scope=everything&vid=kb&lang=en_US&offset=0"
+                + "&tab=Everything&search_scope=MyInst_and_CI&sortby=rank&vid=01CUNY_KB:CUNY_KB&lang=en&offset=0"
             )
             bib_info4 = '<li><a href="' + url + '">Search the catalog</a></li>'
         elif line[2]:
             url = (
-                "http://onesearch.cuny.edu/primo-explore/search?query=any,contains,"
+                "https://cuny-kb.primo.exlibrisgroup.com/discovery/search?query=title,contains,"
                 + line[2]
-                + "&tab=default_tab&search_scope=everything&vid=kb&lang=en_US&offset=0"
+                + "&tab=Everything&search_scope=MyInst_and_CI&sortby=rank&vid=01CUNY_KB:CUNY_KB&lang=en&offset=0"
             )
             bib_info4 = '<li><a href="' + url + '">Search the catalog</a></li>'
         else:
